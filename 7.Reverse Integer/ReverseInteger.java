@@ -1,7 +1,7 @@
-/**************************************************************
- **  Runtime: 1ms (beats 100% of java submissions)            *
- **  Memory Usage: 36.2 MB (beats 58.67% of java submissions) *
- **************************************************************/
+/***************************
+ **  Runtime: 1ms          *
+ **  Memory Usage: 36.2 MB *
+ ***************************/
 
 public class ReverseInteger {
     public int reverse(int x) {
