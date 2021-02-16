@@ -1,3 +1,8 @@
+/**************************
+ **  Runtime: 4ms         *
+ **  Memory Usage: 2.2 MB *
+ **************************/
+
 import "math"
 
 func reverse(x int) int {
