@@ -1,4 +1,7 @@
-
+/****************************
+ **  Runtime: 0ms          **
+ **  Memory Usage: 5.6 MB  **
+ ****************************/
 
 int reverse(int x){
     // save reversed x in output
