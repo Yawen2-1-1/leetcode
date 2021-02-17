@@ -1,21 +1,22 @@
-/**************************
- **  Runtime: 4ms         *
- **  Memory Usage: 2.2 MB *
- **************************/
+/***************************
+ **  Runtime: 4ms         **
+ **  Memory Usage: 2.2 MB **
+ ***************************/
 
 import "math"
 
 func reverse(x int) int {
-	var n int = 0 // assign reversed x to n
-	var r int = 0 // remainder
+	var output int = 0 // assign reversed x in output, and declare output as int32 to avoid buffer overflow
+	var remainder int = 0
 	for x != 0 {
-		r = x % 10
+		remainder = x % 10
 		x = x / 10
-		n = n*10 + r
-		if n > math.MaxInt32 || n < -math.MaxInt32-1 { // avoid buffer overflow
+		output = output * 10 + remainder
+		// constraint: -2^31 <= output <= 2^31 - 1
+		if output > math.MaxInt32 || output < -math.MaxInt32-1 {
 			return 0
 		}
 	}
 
-	return n
+	return output
 }
